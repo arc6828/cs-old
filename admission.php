@@ -61,8 +61,8 @@
                   </tr></thead>              
                                 <tbody>
                     <tr><td bgcolor="#76EEC6">รับสมัคร</td>
-                    <td bgcolor="#C1FFC1" align="">1-15 ธ.ค. 61<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a> <br> 16 ธ.ค.61-3 ก.พ.62<br> <a href="http://cs.vru.ac.th/admission.php">http://cs.vru.ac.th/admission.php</a> </td>
-                    <td bgcolor="#FFFACD" align="">4 ก.พ.-23 มี.ค.62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a><br> 24 มี.ค.-16 เม.ย. 62<br> <a href="http://cs.vru.ac.th/admission.php">http://cs.vru.ac.th/admission.php</a> </td>
+                    <td bgcolor="#C1FFC1" align="">1-15 ธ.ค. 61<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a> <br> 16 ธ.ค. 61 - 3 ก.พ. 62<br> <a href="http://cs.vru.ac.th/admission.php">http://cs.vru.ac.th/admission.php</a> </td>
+                    <td bgcolor="#FFFACD" align="">4 ก.พ. - 23 มี.ค. 62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a><br> 24 มี.ค. - 16 เม.ย. 62<br> <a href="http://cs.vru.ac.th/admission.php">http://cs.vru.ac.th/admission.php</a> </td>
                     <td bgcolor="#F0FFF0" align="">17-29 เม.ย.62<br>website ทปอ.<br> 30 เม.ย. 62 เป็นต้นไป<br> <a href="http://cs.vru.ac.th/admission.php">http://cs.vru.ac.th/admission.php</a> </td>
                     <!--<td bgcolor="#C1FFC1"><?php// echo $record["configdate_04"]; ?></td>
                     <td bgcolor="#C1FFC1"><?php// echo $record["configdate_05"]; ?></td>-->
