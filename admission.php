@@ -190,10 +190,11 @@
         </figure>
       </section>
     </div>
+
     
     <div class="text-center">
 
-      <a class="btn btn-success" style="color:white;">กรอกใบสมัคร</a>   
+      <a class="btn btn-success" style="color:white;" href="https://goo.gl/forms/0OXbNd64SHkSlzNv1">กรอกใบสมัคร</a>   
 
     </div>
   </div>
