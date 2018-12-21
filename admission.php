@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
   <?php include 'ahead.php';  ?>
+
+
+  <meta property="og:url"                content="http://cs.vru.ac.th/admission.php" />
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="รับสมัครนักศึกษา (ปริญญาตรี จันทร์-ศุกร์)" />
+  <meta property="og:description"        content="หลักสูตรวิทยาการคอมพิวเตอร์รับสมัครนักศึกษา TCAS 62 (ปริญญาตรี จันทร์-ศุกร์) ตั้งแต่วันนี้เป็นต้นไป  สนใจดูรายละเอียดและกรอกใบสมัครได้ที่นี่ สอบถามข้อมูลการรับสมัครเพิ่มเติม โทร. 083-138-0981" />
+  <meta property="og:image"              content="http://cs.vru.ac.th/images/slide/2.jpg" />
 </head>
 <body>
 
