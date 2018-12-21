@@ -2,8 +2,8 @@
    
    <!-- start header -->    
   <div class="container" style="display:block;width:auto;height:100%;overflow:hidden">
-    <div style="display:block;width:600px;height:100%; float:left;">
-      <img src="images/logo5.png" style="margin-top:0px;">
+    <div>
+      <img src="images/logo5.png" style="width: 100%;">
     </div>
     
   </div>
