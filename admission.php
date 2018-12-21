@@ -50,10 +50,6 @@
         <figure>
         <table>
         <tbody><tr><td bgcolor="#ABEBC6">
-        <p>
-          <font color="" size="5"><b></b></font>
-          <img src="../images/demo/new_icon/newlight.gif">
-        </p>
               <table class="table">
                   <thead>
                     <tr><th width="30%">กิจกรรม</th>
@@ -65,10 +61,9 @@
                   </tr></thead>              
                                 <tbody>
                     <tr><td bgcolor="#76EEC6">รับสมัคร</td>
-                    <td bgcolor="#C1FFC1" align="">1-15 ธ.ค. 61<br>http://ent.vru.ac.th</td>
-                    <td bgcolor="#FFFACD" align="">4 ก.พ.-23 มี.ค.62
-<br>http://ent.vru.ac.th</td>
-                    <td bgcolor="#F0FFF0" align="">17-29 เม.ย.62<br>website ทปอ.</td>
+                    <td bgcolor="#C1FFC1" align="">1-15 ธ.ค. 61<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a> <br> 16 ธ.ค.-3 ก.พ. 61<br> <a href="http://cs.vru.ac.th/admission.php">http://cs.vru.ac.th/admission.php</a> </td>
+                    <td bgcolor="#FFFACD" align="">4 ก.พ.-23 มี.ค.62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a><br> 24 มี.ค.-16 เม.ย. 61<br> <a href="http://cs.vru.ac.th/admission.php">http://cs.vru.ac.th/admission.php</a> </td>
+                    <td bgcolor="#F0FFF0" align="">17-29 เม.ย.62<br>website ทปอ.<br> 30 เม.ย. 61 เป็นต้นไป<br> <a href="http://cs.vru.ac.th/admission.php">http://cs.vru.ac.th/admission.php</a> </td>
                     <!--<td bgcolor="#C1FFC1"><?php// echo $record["configdate_04"]; ?></td>
                     <td bgcolor="#C1FFC1"><?php// echo $record["configdate_05"]; ?></td>-->
                   </tr></tbody>  
@@ -82,17 +77,17 @@
                   </tr></tbody>  
                                 <tbody>
                     <tr><td bgcolor="#76EEC6">ส่งหลักฐานประกอบการรับสมัคร</td>
-                    <td bgcolor="#C1FFC1" align="">1-15 ธ.ค. 61<br>http://ent.vru.ac.th</td>
-                    <td bgcolor="#FFFACD" align="">4 ก.พ.-23 มี.ค.62<br>http://ent.vru.ac.th</td>
+                    <td bgcolor="#C1FFC1" align="">1-15 ธ.ค. 61<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
+                    <td bgcolor="#FFFACD" align="">4 ก.พ.-23 มี.ค.62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
                     <td bgcolor="#F0FFF0" align="">ในวันสอบสัมภาษณ์<br></td>
                     <!--<td bgcolor="#C1FFC1"><?php// echo $record["configdate_04"]; ?></td>
                     <td bgcolor="#C1FFC1"><?php// echo $record["configdate_05"]; ?></td>-->
                   </tr></tbody>  
                                 <tbody>
                     <tr><td bgcolor="#76EEC6">ประกาศรายชื่อผู้มีสิทธิ์สอบสัมภาษณ์และห้องสอบสัมภาษณ์</td>
-                    <td bgcolor="#C1FFC1" align="">8 ม.ค. 62<br>http://ent.vru.ac.th</td>
-                    <td bgcolor="#FFFACD" align="">11 เม.ย. 62<br>http://ent.vru.ac.th</td>
-                    <td bgcolor="#F0FFF0" align="">9 พ.ค. 62<br>http://ent.vru.ac.th</td>
+                    <td bgcolor="#C1FFC1" align="">8 ม.ค. 62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
+                    <td bgcolor="#FFFACD" align="">11 เม.ย. 62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
+                    <td bgcolor="#F0FFF0" align="">9 พ.ค. 62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
                     <!--<td bgcolor="#C1FFC1"><?php// echo $record["configdate_04"]; ?></td>
                     <td bgcolor="#C1FFC1"><?php// echo $record["configdate_05"]; ?></td>-->
                   </tr></tbody>  
@@ -106,9 +101,9 @@
                   </tr></tbody>  
                                 <tbody>
                     <tr><td bgcolor="#76EEC6">ประกาศรายชื่อผู้ผ่านการสอบสัมภาษณ์</td>
-                    <td bgcolor="#C1FFC1" align="">22 ม.ค. 62<br>http://ent.vru.ac.th</td>
-                    <td bgcolor="#FFFACD" align="">22 เม.ย. 62<br>http://ent.vru.ac.th</td>
-                    <td bgcolor="#F0FFF0" align="">17 พ.ค. 62<br>http://ent.vru.ac.th</td>
+                    <td bgcolor="#C1FFC1" align="">22 ม.ค. 62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
+                    <td bgcolor="#FFFACD" align="">22 เม.ย. 62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
+                    <td bgcolor="#F0FFF0" align="">17 พ.ค. 62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
                     <!--<td bgcolor="#C1FFC1"><?php// echo $record["configdate_04"]; ?></td>
                     <td bgcolor="#C1FFC1"><?php// echo $record["configdate_05"]; ?></td>-->
                   </tr></tbody>  
@@ -132,17 +127,17 @@
                   </tr></tbody>  
                                 <tbody>
                     <tr><td bgcolor="#76EEC6">ประกาศรายชื่อผู้มีสิทธิ์เข้าศึกษา</td>
-                    <td bgcolor="#C1FFC1" align="">5 ก.พ. 62<br>http://ent.vru.ac.th</td>
-                    <td bgcolor="#FFFACD" align="">29 เม.ย. 62<br>http://ent.vru.ac.th</td>
-                    <td bgcolor="#F0FFF0" align="">17 พ.ค. 62<br>http://ent.vru.ac.th</td>
+                    <td bgcolor="#C1FFC1" align="">5 ก.พ. 62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
+                    <td bgcolor="#FFFACD" align="">29 เม.ย. 62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
+                    <td bgcolor="#F0FFF0" align="">17 พ.ค. 62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
                     <!--<td bgcolor="#C1FFC1"><?php// echo $record["configdate_04"]; ?></td>
                     <td bgcolor="#C1FFC1"><?php// echo $record["configdate_05"]; ?></td>-->
                   </tr></tbody>  
                                 <tbody>
                     <tr><td bgcolor="#76EEC6">พิมพ์ใบแจ้งชำระเงินค่าธรรมเนียมแรกเข้า</td>
-                    <td bgcolor="#C1FFC1" align="">11-17 ก.พ. 62<br>http://ent.vru.ac.th</td>
-                    <td bgcolor="#FFFACD" align="">6-12 พ.ค. 62 <br>http://ent.vru.ac.th</td>
-                    <td bgcolor="#F0FFF0" align="">20-26 พ.ค.62<br>http://ent.vru.ac.th</td>
+                    <td bgcolor="#C1FFC1" align="">11-17 ก.พ. 62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
+                    <td bgcolor="#FFFACD" align="">6-12 พ.ค. 62 <br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
+                    <td bgcolor="#F0FFF0" align="">20-26 พ.ค.62<br><a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
                     <!--<td bgcolor="#C1FFC1"><?php// echo $record["configdate_04"]; ?></td>
                     <td bgcolor="#C1FFC1"><?php// echo $record["configdate_05"]; ?></td>-->
                   </tr></tbody>  
@@ -160,7 +155,7 @@
                 <tbody>
                                 </tbody><tbody>
                     <tr><td width="30%" bgcolor="#76EEC6">พิมพ์ใบแจ้งชำระเงินค่าธรรมเนียมการศึกษา</td>
-                    <td bgcolor="#CCFF99" align="">วันที่ 22-31 พฤษภาคม 2562  http://ent.vru.ac.th</td>
+                    <td bgcolor="#CCFF99" align="">วันที่ 22-31 พฤษภาคม 2562  <a href="http://ent.vru.ac.th">http://ent.vru.ac.th</a></td>
                   </tr></tbody>
                                 <tbody>
                     <tr><td width="30%" bgcolor="#76EEC6">ชำระเงินค่าธรรมเนียมการศึกษา</td>
