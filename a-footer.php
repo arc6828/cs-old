@@ -1,6 +1,6 @@
 <!-- start footer -->    
 <div style="display:block;width:auto;height:100%;overflow:hidden; background:#b53292">
-  <div style="display:block;width:850px;height:100%; float:left;">
+  <div style="display:block; max-width:850px;height:100%; float:left;">
     <blockquote>
       <p></p>      
       <a>&nbsp; &nbsp; &nbsp; &nbsp;<font color="#ffffff">Copyright © 2018 หลักสูตรวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยี </font><br> 

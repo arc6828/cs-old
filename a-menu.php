@@ -11,7 +11,7 @@
  
  
  <!-- start menu --> 
-  <div class="container-fluid" style="background-image:url(images/body-bg7.png)"> 
+  <div class="container-fluid" style="background-image:url(images/body-bg7.png); margin-bottom: 24px;"> 
     <div class="container"> 
       <nav class="navbar navbar-expand-lg navbar-light bg-success">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
