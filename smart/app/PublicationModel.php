@@ -1,0 +1,24 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+
+class PublicationModel extends Model
+{
+  public static function select_all()
+  {
+    return DB::table('publications')
+      ->orderBy('year', 'desc')
+      ->get();
+  }
+
+  public static function select_search($authors)
+  {
+    return DB::table('publications')
+      ->where('authors', 'like', "%$authors%")
+      ->orderBy('year', 'desc')
+      ->get();
+  }
+}
