@@ -21,6 +21,7 @@ class CreatePublicationsTable extends Migration
           $table->integer('year')->nullable();
           $table->string('pages')->nullable();
           $table->string('type')->nullable();
+          $table->string('language')->nullable();
           $table->timestamps();
         });
         //•	ฐาปกรณ์ ต้นสมบูรณ์ และ วิศรุต ขวัญคุ้ม. “ระบบจอง-ยืมรูปเล่มโปรเจคสาขาวิทยาการคอมพิวเตอร”.

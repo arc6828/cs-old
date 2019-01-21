@@ -14,9 +14,15 @@ class PublicationController extends Controller
      */
     public function index(Request $request)
     {
-      $authors = $request->input("authors","");
+
+      $query = [
+        ["authors", 'like' , "%{$request->input("authors","")}%"],
+        ["year" , 'like' , "%{$request->input("year","")}%"],
+      ];
       $data = [
-        "publications" => PublicationModel::select_search($authors),
+        "publications" => PublicationModel::select_search($query),
+        "authors" => $request->input("authors",""),
+        "year" => $request->input("year",""),
       ];
       return view('publication/index', $data);
     }

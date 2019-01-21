@@ -14,10 +14,10 @@ class PublicationModel extends Model
       ->get();
   }
 
-  public static function select_search($authors)
+  public static function select_search($query)
   {
     return DB::table('publications')
-      ->where('authors', 'like', "%$authors%")
+      ->where($query)
       ->orderBy('year', 'desc')
       ->get();
   }

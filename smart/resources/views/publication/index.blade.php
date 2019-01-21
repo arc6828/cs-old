@@ -8,8 +8,15 @@
 
       <div class="card-body">
         <form action="{{ url('/') }}/publication">
-          <input name="authors" placeholder="ค้นหาด้วยชื่อ">
-          <button type="submit">Search</button>
+          <input name="authors" id="authors" placeholder="ค้นหาด้วยชื่อ">
+          <select name="year" id="year" placeholder="ปีที่ตีพิมพ์"  >
+            <option value="">ทุกปี</option>
+            @foreach([2019,2018,2017,2016,2015] as $y)
+            <option value="{{ $y }}">{{ ($y) }}</option>
+            @endforeach
+          </select>
+
+          <button type="submit">Search2</button>
         </form>
 
         <ul>
@@ -35,7 +42,21 @@
         </ul>
 
 
+
+
       </div>
   </div>
 </div>
+<script type="text/javascript">
+  //555
+  //{{ $authors }}
+  //{{ $year }}
+  document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
+    document.querySelector("#authors").value = "{{ $authors }}" ;
+    document.querySelector("#year").value = "{{ $year }}" ;
+    //console.log("Hello",document.querySelector("#year").value);
+  });
+
+</script>
 @endsection
