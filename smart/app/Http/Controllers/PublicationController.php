@@ -34,7 +34,7 @@ class PublicationController extends Controller
      */
     public function create()
     {
-      return view('create');
+      return view('publication/create');
     }
 
     /**
@@ -45,7 +45,17 @@ class PublicationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $input = [
+        "authors" => $request->input("authors",""),
+        "title" => $request->input("title",""),
+        "publisher" => $request->input("publisher",""),
+        "year" => $request->input("year",""),
+        "pages" => $request->input("pages",""),
+        "type" => $request->input("type",""),
+        "language" => $request->input("language",""),
+      ];
+      PublicationModel::insert($input);
+      return redirect('/publication');
     }
 
     /**
@@ -67,7 +77,10 @@ class PublicationController extends Controller
      */
     public function edit($id)
     {
-        //
+      $data = [
+        "publication" => PublicationModel::select_by_id($id)
+      ];
+      return view('publication/edit',$data);
     }
 
     /**

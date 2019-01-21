@@ -2,11 +2,13 @@
 
 @section('content')
 <div class="container">
-
+  <div style="margin-bottom : 20px;">
+    <a href="{{ url('/') }}/publication/create" class="btn btn-primary">New Publication</a>
+  </div>
   <div class="card">
       <div class="card-header">
         <div class="row">
-          <div class="col-6"><label>Publications</label></div>
+          <div class="col-6"><h4>Publications</h4></div>
           <div class="col-6">
             <form class="text-right" action="{{ url('/') }}/publication">
               <input name="authors" id="authors" placeholder="ค้นหาด้วยชื่อ">

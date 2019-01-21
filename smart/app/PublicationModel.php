@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\DB;
 
 class PublicationModel extends Model
 {
+  protected $table = 'publications';
+
   public static function select_all()
   {
     return DB::table('publications')
@@ -21,4 +23,17 @@ class PublicationModel extends Model
       ->orderBy('year', 'desc')
       ->get();
   }
+
+  public static function select_by_id($id)
+  {
+    return PublicationModel::findOrFail($id);
+  }
+
+  public static function insert($input)
+  {
+    return DB::table('publications')
+      ->insertGetId($input);
+  }
+
+
 }
