@@ -20,7 +20,7 @@
   <div class="d-none" style="margin-bottom : 20px;">
     <a href="{{ url('/') }}/publication/create" class="btn btn-success">New Publication</a>
   </div>
-  <div class="card">
+  <div class="card" style="margin-bottom:20px;">
       <div class="card-header">
         <div class="row">
           <div class="col-6"><a href="{{ url('/') }}/publication/create" class="btn btn-success">New Publication</a></div>
@@ -83,6 +83,16 @@
         </div>
       </div>
   </div>
+  <div class="card">
+      <div class="card-header">
+        ข้อเสนอแนะ
+      </div>
+
+      <div class="card-body text-center">
+        <p>ทุกคำแนะนำของท่านเราจะนำพัฒนาบริการของเราให้ดีขึ้น ขอขอบคุณสำหรับทุกคำแนะนำ</p>
+        <a class="btn btn-success" href="https://goo.gl/forms/IFFEmw0jO1UMMP602">กรอกข้อเสนอแนะ</a>
+      </div>
+    </div>
 </div>
 <script type="text/javascript">
   //555
