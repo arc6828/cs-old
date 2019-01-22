@@ -2,13 +2,20 @@
 
 @section('content')
 <div class="container">
-  <div style="margin-bottom : 20px;">
-    <a href="{{ url('/') }}/publication/create" class="btn btn-primary">New Publication</a>
+  <div class="text-center" style="margin-bottom:20px;">
+    <img src="{{ url('/') }}/img/online-exmaination-system.png" width="100%">
+  </div>
+  <h2>Publications</h2>
+  <h5  style="margin-bottom:20px;">
+    รวมผลงานที่ได้รับการตีพิมพ์เผยแพร่ต่อสาธารณะของหลักสูตรวิทยาการคอมพิวเตอร์มหาวิทยาลัมหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์
+  </h5>
+  <div class="d-none" style="margin-bottom : 20px;">
+    <a href="{{ url('/') }}/publication/create" class="btn btn-success">New Publication</a>
   </div>
   <div class="card">
       <div class="card-header">
         <div class="row">
-          <div class="col-6"><h4>Publications</h4></div>
+          <div class="col-6"><a href="{{ url('/') }}/publication/create" class="btn btn-success">New Publication</a></div>
           <div class="col-6">
             <form class="text-right" action="{{ url('/') }}/publication">
               <input name="authors" id="authors" placeholder="ค้นหาด้วยชื่อ">
@@ -19,7 +26,7 @@
                 @endforeach
               </select>
 
-              <button class="btn btn-primary btn-sm" type="submit" id="form-submit">Search</button>
+              <button class="btn btn-success btn-sm" type="submit" id="form-submit">Search</button>
             </form>
           </div>
         </div>
