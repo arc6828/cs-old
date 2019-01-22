@@ -111,11 +111,12 @@
       var a = [
         index+1,
         element.authors,
-        element.title,
+        "<a href='{{url('/')}}/publication/"+element.id+"/edit'>"+element.title+"</a>",
         element.publisher,
         element.year,
         element.pages,
         element.type,
+        "<a href='#' onclick='onDelete("+element.id+")' class='text-danger'><i class='fa fa-trash-alt'></i></a>"
       ];
       dataSet.push(a);
     });
@@ -130,10 +131,32 @@
             { title: "year" },
             { title: "pages" },
             { title: "type" },
+            { title: "action" },
         ]
     } );
 
   });
 
+  function onDelete(id)
+  {
+    //GET FORM BY ID
+    var form = document.querySelector("#form_delete");
+    //SUBMIT
+    var want_to_delete = confirm('Are you sure to delete this item?');
+    if(want_to_delete)
+    {
+      //CHANGE ACTION TO SPECIFY ID
+      form.action = "{{ url('/') }}/publication/"+id;
+      form.submit();
+    }
+  }
+
 </script>
+
+<form action="#" method="POST" id="form_delete" >
+  {{ csrf_field() }}
+  {{ method_field('DELETE') }}
+  <button type="submit">Delete</button>
+</form>
+
 @endsection

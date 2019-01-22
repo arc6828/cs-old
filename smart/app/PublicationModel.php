@@ -35,5 +35,17 @@ class PublicationModel extends Model
       ->insertGetId($input);
   }
 
+  public static function update_by_id($input,$id)
+  {
+    DB::table('publications')
+      ->where("id",$id)
+      ->update($input);
+  }
 
+  public static function delete_by_id($id)
+  {
+    DB::table('publications')
+      ->where("id",$id)
+      ->delete();
+  }
 }

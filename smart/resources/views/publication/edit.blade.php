@@ -12,7 +12,7 @@
 
     <div class="card-body">
 
-      <form action="{{ url('/') }}/publication" method="POST">
+      <form action="{{ url('/') }}/publication/{{ $publication->id }}" method="POST">
         @csrf
         @method('PUT')
         @include('publication/form')

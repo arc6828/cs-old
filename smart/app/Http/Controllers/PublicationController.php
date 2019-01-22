@@ -92,7 +92,17 @@ class PublicationController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $input = [
+        "authors" => $request->input("authors",""),
+        "title" => $request->input("title",""),
+        "publisher" => $request->input("publisher",""),
+        "year" => $request->input("year",""),
+        "pages" => $request->input("pages",""),
+        "type" => $request->input("type",""),
+        "language" => $request->input("language",""),
+      ];
+      PublicationModel::update_by_id($input,$id);
+      return redirect('/publication#title');
     }
 
     /**
@@ -103,6 +113,7 @@ class PublicationController extends Controller
      */
     public function destroy($id)
     {
-        //
+      PublicationModel::delete_by_id($id);
+      return redirect('/publication#title');
     }
 }

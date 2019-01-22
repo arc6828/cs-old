@@ -2,13 +2,13 @@
   <div class="form-group row">
     <label for="staticEmail" class="col-sm-2 col-form-label">authors</label>
     <div class="col-sm-10">
-      <input class="form-control" name="authors" id="authors" placeholder="ชื่อผู้เขียน">
+      <input class="form-control" name="authors" id="authors" placeholder="ชื่อผู้เขียน" required>
     </div>
   </div>
   <div class="form-group row">
     <label for="inputPassword" class="col-sm-2 col-form-label">title</label>
     <div class="col-sm-10">
-      <input class="form-control" name="title" id="title" placeholder="ชื่อเรื่อง">
+      <input class="form-control" name="title" id="title" placeholder="ชื่อเรื่อง" required>
     </div>
   </div>
   <div class="form-group row">
@@ -20,7 +20,7 @@
   <div class="form-group row">
     <label for="inputPassword" class="col-sm-2 col-form-label">year</label>
     <div class="col-sm-10">
-      <input class="form-control" name="year" id="year" placeholder="ปี ค.ศ.">
+      <input type="number" class="form-control" name="year" id="year" placeholder="ปี ค.ศ.">
     </div>
   </div>
   <div class="form-group row">
