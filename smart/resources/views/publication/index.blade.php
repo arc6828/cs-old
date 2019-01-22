@@ -1,11 +1,19 @@
 @extends('layouts.app')
 
+@section('meta')
+<meta property="og:url"                content="{{ url('/') }}/publication" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="Publications" />
+<meta property="og:description"        content="รวมผลงานที่ได้รับการตีพิมพ์เผยแพร่ต่อสาธารณะของหลักสูตรวิทยาการคอมพิวเตอร์มหาวิทยาลัมหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์" />
+<meta property="og:image"              content="{{ url('/') }}/img/online-exmaination-system.png" />
+@endsection
+
 @section('content')
 <div class="container">
   <div class="text-center" style="margin-bottom:20px;">
     <img src="{{ url('/') }}/img/online-exmaination-system.png" width="100%">
   </div>
-  <h2>Publications</h2>
+  <h2 id="title">Publications</h2>
   <h5  style="margin-bottom:20px;">
     รวมผลงานที่ได้รับการตีพิมพ์เผยแพร่ต่อสาธารณะของหลักสูตรวิทยาการคอมพิวเตอร์มหาวิทยาลัมหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์
   </h5>
@@ -17,7 +25,7 @@
         <div class="row">
           <div class="col-6"><a href="{{ url('/') }}/publication/create" class="btn btn-success">New Publication</a></div>
           <div class="col-6">
-            <form class="text-right" action="{{ url('/') }}/publication">
+            <form class="text-right" action="{{ url('/') }}/publication#title">
               <input name="authors" id="authors" placeholder="ค้นหาด้วยชื่อ">
               <select name="year" id="year" placeholder="ปีที่ตีพิมพ์" style="height:30px;" onchange="document.querySelector('#form-submit').click(); ">
                 <option value="">ทุกปี</option>
