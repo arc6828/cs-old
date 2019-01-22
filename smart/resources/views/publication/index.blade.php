@@ -13,7 +13,7 @@
   <div class="text-center" style="margin-bottom:20px;">
     <img src="{{ url('/') }}/img/online-exmaination-system.png" width="100%">
   </div>
-  <h2 id="title">Publications</h2>
+  <h2 id="title">Publication</h2>
   <h5  style="margin-bottom:20px;">
     รวมผลงานที่ได้รับการตีพิมพ์เผยแพร่ต่อสาธารณะของหลักสูตรวิทยาการคอมพิวเตอร์มหาวิทยาลัมหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์
   </h5>
@@ -153,7 +153,7 @@
 
 </script>
 
-<form action="#" method="POST" id="form_delete" >
+<form action="#" method="POST" id="form_delete" class="d-none" >
   {{ csrf_field() }}
   {{ method_field('DELETE') }}
   <button type="submit">Delete</button>
