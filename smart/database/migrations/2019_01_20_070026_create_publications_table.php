@@ -18,6 +18,7 @@ class CreatePublicationsTable extends Migration
           $table->text('authors')->nullable();
           $table->text('title')->nullable();
           $table->text('publisher')->nullable();
+          $table->integer('month')->nullable();
           $table->integer('year')->nullable();
           $table->string('pages')->nullable();
           $table->string('type')->nullable();

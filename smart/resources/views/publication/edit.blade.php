@@ -32,6 +32,7 @@
     document.querySelector("#authors").value = "{{ $publication->authors }}" ;
     document.querySelector("#title").value = "{{ $publication->title }}" ;
     document.querySelector("#publisher").value = "{{ $publication->publisher }}" ;
+    document.querySelector("#month").value = "{{ $publication->month }}" ;
     document.querySelector("#year").value = "{{ $publication->year }}" ;
     document.querySelector("#pages").value = "{{ $publication->pages }}" ;
     document.querySelector("#type").value = "{{ $publication->type }}" ;

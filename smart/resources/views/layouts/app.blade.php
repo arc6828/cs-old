@@ -91,8 +91,7 @@
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" defer></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js" defer></script>
 
-
-
+    <script src="https://momentjs.com/downloads/moment-with-locales.js" defer></script>
 
 </body>
 </html>

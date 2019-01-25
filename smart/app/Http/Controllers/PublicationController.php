@@ -45,11 +45,13 @@ class PublicationController extends Controller
      */
     public function store(Request $request)
     {
+
       $input = [
         "authors" => $request->input("authors",""),
         "title" => $request->input("title",""),
         "publisher" => $request->input("publisher",""),
-        "year" => $request->input("year",""),
+        "month" => $request->input("month","1"),
+        "year" => $request->input("year","")<2500?$request->input("year",""):$request->input("year","")-543,
         "pages" => $request->input("pages",""),
         "type" => $request->input("type",""),
         "language" => $request->input("language",""),
@@ -96,7 +98,8 @@ class PublicationController extends Controller
         "authors" => $request->input("authors",""),
         "title" => $request->input("title",""),
         "publisher" => $request->input("publisher",""),
-        "year" => $request->input("year",""),
+        "month" => $request->input("month","1"),
+        "year" => $request->input("year","")<2500?$request->input("year",""):$request->input("year","")-543,
         "pages" => $request->input("pages",""),
         "type" => $request->input("type",""),
         "language" => $request->input("language",""),

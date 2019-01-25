@@ -108,12 +108,15 @@
     var jsonData = JSON.parse('@json($publications)');
     var dataSet = [];
     jsonData.forEach(function(element,index){
+      var d = new Date(element.year+543, element.month-1, 1);
+      moment.locale('th');
+      d = moment(d).format('MMMM YYYY');
       var a = [
         index+1,
         element.authors,
         "<a href='{{url('/')}}/publication/"+element.id+"/edit'>"+element.title+"</a>",
         element.publisher,
-        element.year,
+        d,
         element.pages,
         element.type,
         "<a href='#' onclick='onDelete("+element.id+")' class='text-danger'><i class='fa fa-trash-alt'></i></a>"
@@ -128,7 +131,7 @@
             { title: "authors" },
             { title: "title" },
             { title: "publisher" },
-            { title: "year" },
+            { title: "date" },
             { title: "pages" },
             { title: "type" },
             { title: "action" },
