@@ -12,8 +12,7 @@ class PublicationModel extends Model
   public static function select_all()
   {
     return DB::table('publications')
-      ->orderBy('year', 'desc')
-      ->orderBy('month', 'desc')
+      ->orderBy('year', 'month', 'desc')
       ->get();
   }
 
