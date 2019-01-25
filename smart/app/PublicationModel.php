@@ -13,6 +13,7 @@ class PublicationModel extends Model
   {
     return DB::table('publications')
       ->orderBy('year', 'desc')
+      ->orderBy('month', 'desc')
       ->get();
   }
 
