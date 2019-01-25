@@ -110,7 +110,7 @@
     jsonData.forEach(function(element,index){
       var d = new Date(element.year, element.month-1, 1);
       moment.locale('th');
-      d = moment(d).format('YYYY-MM');
+      d = moment(d).format('YYYY/MM');
       var a = [
         index+1,
         element.authors,
