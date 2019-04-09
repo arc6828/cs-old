@@ -112,11 +112,10 @@
       moment.locale('th');
       d = moment(d).format('YYYY/MM');
       var a = [
-        index+1,
+        d,
         element.authors,
         "<a href='{{url('/')}}/publication/"+element.id+"/edit'>"+element.title+"</a>",
         element.publisher,
-        d,
         element.pages,
         element.type,
         "<a href='#' onclick='onDelete("+element.id+")' class='text-danger'><i class='fa fa-trash-alt'></i></a>"
@@ -127,16 +126,15 @@
     $('#table-publication').DataTable( {
         data: dataSet,
         columns: [
-            { title: "#" },
+            { title: "date" },
             { title: "authors" },
             { title: "title" },
             { title: "publisher" },
-            { title: "date" },
             { title: "pages" },
             { title: "type" },
             { title: "action" },
         ]
-    } );
+    } ).order( [ 0, 'desc' ] ).draw();
 
   });
 
