@@ -117,7 +117,7 @@
         "<a href='{{url('/')}}/publication/"+element.id+"/edit'>"+element.title+"</a>",
         element.publisher,
         element.pages,
-        element.type,
+        element.language + " " + element.type,
         "<a href='#' onclick='onDelete("+element.id+")' class='text-danger'><i class='fa fa-trash-alt'></i></a>"
       ];
       dataSet.push(a);
