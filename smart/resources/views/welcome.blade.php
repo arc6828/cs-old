@@ -93,6 +93,9 @@
                     <a  href="{{ url('/') }}/.." class="btn btn-outline-secondary form-control"  >back to main</a>
                   </div>
                   <div class="col">
+                    <a href="{{ url('/') }}/event" class="btn btn-success form-control" >See Event</a>
+                  </div>
+                  <div class="col">
                     <a href="{{ url('/') }}/publication" class="btn btn-primary form-control" >See Publication</a>
                   </div>
                 </div>
