@@ -1,11 +1,22 @@
 @extends('layouts.app')
 
+@section('meta')
+<meta property="og:url"                content="{{ url('/') }}/event" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="Events" />
+<meta property="og:description"        content="รวมการเข้าอบรมของอาจารย์ในหลักสูตรวิทยาการคอมพิวเตอร์มหาวิทยาลัมหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์" />
+<meta property="og:image"              content="{{ url('/') }}/img/Picto-classroom.png" />
+@endsection
+
 @section('content')
     <div class="container">
         <div class="row">
 
 
             <div class="col-md-12">
+                <div class="text-center">
+                  <img width="50%" src="{{ url('/') }}/img/Picto-classroom.png" />
+                </div>
                 <div class="card">
                     <div class="card-header">Event</div>
                     <div class="card-body">
