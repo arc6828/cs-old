@@ -1,0 +1,32 @@
+{
+    "fields": [
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "guest_name",
+            "type": "string"
+        },
+        {
+            "name": "place_type",
+            "type": "select",
+            "options": {
+                "ภายใน": "ภายในมหาวิทยาลัย",
+                "ภายนอก": "ภายนอกมหาวิทยาลัย"
+            }
+        },
+        {
+            "name": "place",
+            "type": "string"
+        },
+        {
+            "name": "date",
+            "type": "date"
+        },
+        {
+            "name": "filename",
+            "type": "string"
+        }
+    ]
+}

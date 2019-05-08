@@ -20,3 +20,5 @@ Route::resource('/publication', 'PublicationController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('event', 'EventController');

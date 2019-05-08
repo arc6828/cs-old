@@ -58,8 +58,8 @@
     <label for="inputPassword" class="col-sm-2 col-form-label">language</label>
     <div class="col-sm-4">
       <select name="language" id="language"  class="form-control">
-        <option value="national">National</option>
-        <option value="international">International</option>
+        <option value="National">National</option>
+        <option value="International">International</option>
       </select>
     </div>
   </div>
