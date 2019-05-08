@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 php artisan crud:generate Event --fields_from_file="resources/crud-generator/json/event.json"
-=======
-php artisan crud:generate Event --fields_from_file="resources/crud-generator/json/event.json"
->>>>>>> 2972fae72950e8ee6501c31c96d1116124ee76ce
