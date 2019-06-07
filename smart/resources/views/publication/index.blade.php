@@ -55,7 +55,7 @@
           <div class="tab-pane fade show active" id="table" role="tabpanel" aria-labelledby="home-tab" >
 
             <div class="table-responsive" style="margin-top:20px;">
-              <table id="table-publication" class="table table-responsive w-100 d-block d-md-table table-striped table-bordered table-sm"></table>
+              <table id="table-publication" class="table table-responsive w-100 d-block d-md-table table-striped table-bordered"></table>
             </div>
           </div>
           <div class="tab-pane fade" id="bullet" role="tabpanel" aria-labelledby="profile-tab">
