@@ -16,8 +16,8 @@
     </div>
   </div>  
   <h2 id="title">Publication</h2>
-  <h5  style="margin-bottom:20px;">
-    รวมผลงานที่ได้รับการตีพิมพ์เผยแพร่ต่อสาธารณะของหลักสูตรวิทยาการคอมพิวเตอร์มหาวิทยาลัมหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์
+  <h5  class="mb-4 text-center" style="margin-bottom:20px;">
+    รวมผลงานที่ได้รับการตีพิมพ์เผยแพร่ต่อสาธารณะของหลักสูตรวิทยาการคอมพิวเตอร์ <br/>มหาวิทยาลัมหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์
   </h5>
   <div class="d-none" style="margin-bottom : 20px;">
     <a href="{{ url('/') }}/publication/create" class="btn btn-success">New Publication</a>
