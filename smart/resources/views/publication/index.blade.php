@@ -10,9 +10,11 @@
 
 @section('content')
 <div class="container">
-  <div class="text-center" style="margin-bottom:20px;">
-    <img src="{{ url('/') }}/img/online-exmaination-system.png" width="100%">
-  </div>
+  <div class="row mb-4">
+    <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-10 col-sm-12">
+      <img src="{{ url('/') }}/img/online-exmaination-system.png" width="100%" >
+    </div>
+  </div>  
   <h2 id="title">Publication</h2>
   <h5  style="margin-bottom:20px;">
     รวมผลงานที่ได้รับการตีพิมพ์เผยแพร่ต่อสาธารณะของหลักสูตรวิทยาการคอมพิวเตอร์มหาวิทยาลัมหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์
