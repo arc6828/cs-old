@@ -10,12 +10,14 @@
 
 @section('content')
 <div class="container">
-  <div class="text-center" style="margin-bottom:20px;">
-    <img src="{{ url('/') }}/img/online-exmaination-system.png" width="100%">
-  </div>
+  <div class="row mb-4">
+    <div class="offset-lg-3 col-lg-6 offset-md-2 col-md-8 col-sm-12">
+      <img src="{{ url('/') }}/img/online-exmaination-system.png" width="100%" >
+    </div>
+  </div>  
   <h2 id="title">Publication</h2>
-  <h5  style="margin-bottom:20px;">
-    รวมผลงานที่ได้รับการตีพิมพ์เผยแพร่ต่อสาธารณะของหลักสูตรวิทยาการคอมพิวเตอร์มหาวิทยาลัมหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์
+  <h5  class="mb-4 text-center" >
+    รวมผลงานที่ได้รับการตีพิมพ์เผยแพร่ต่อสาธารณะของหลักสูตรวิทยาการคอมพิวเตอร์ <br/>มหาวิทยาลัมหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์
   </h5>
   <div class="d-none" style="margin-bottom : 20px;">
     <a href="{{ url('/') }}/publication/create" class="btn btn-success">New Publication</a>
@@ -61,8 +63,8 @@
             <ul style="margin-top:20px;">
               @foreach($publications as $row)
                 <li>
-                  {{ $row->authors }}. ($row->year)
-                  "{{ $row->title }}". 
+                  {{ $row->authors }}.
+                  "{{ $row->title }}".
                   {{ $row->publisher }},
                   {{ $row->year }},
                   หน้า {{ $row->pages }}.
