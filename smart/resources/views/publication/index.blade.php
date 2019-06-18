@@ -131,7 +131,7 @@
         d,
         element.authors,
         "<a href='{{url('/')}}/publication/"+element.id+"/edit'>"+element.title+"</a>",
-        element.publisher,
+        escape(element.publisher),
         element.city,
         element.place,
         element.pages,
