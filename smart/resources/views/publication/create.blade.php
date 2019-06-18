@@ -18,6 +18,7 @@
         @include('publication/form')
         <div class="form-group row">
           <div class="col-sm-12 text-center">
+            <a href="{{ url('/') }}/smart/public/publication" class="btn btn-outline-primary" >Back</a>
             <button class="btn btn-primary" type="submit">Save</button>
           </div>
         </div>

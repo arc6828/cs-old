@@ -18,6 +18,7 @@
         @include('publication/form')
         <div class="form-group row">
           <div class="col-sm-12 text-center">
+            <a href="{{ url('/') }}/smart/public/publication" class="btn btn-outline-primary" >Back</a>
             <button class="btn btn-primary" type="submit">Save</button>
           </div>
         </div>
@@ -32,11 +33,14 @@
     document.querySelector("#authors").value = "{{ $publication->authors }}" ;
     document.querySelector("#title").value = "{{ $publication->title }}" ;
     document.querySelector("#publisher").value = "{{ $publication->publisher }}" ;
+    document.querySelector("#date").value = "{{ $publication->date }}" ;
     document.querySelector("#month").value = "{{ $publication->month }}" ;
     document.querySelector("#year").value = "{{ $publication->year }}" ;
     document.querySelector("#pages").value = "{{ $publication->pages }}" ;
     document.querySelector("#type").value = "{{ $publication->type }}" ;
     document.querySelector("#language").value = "{{ $publication->language }}" ;
+    document.querySelector("#city").value = "{{ $publication->city }}" ;
+    document.querySelector("#place").value = "{{ $publication->place }}" ;
 
 
   });

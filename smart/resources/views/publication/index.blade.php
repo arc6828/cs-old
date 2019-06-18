@@ -59,9 +59,22 @@
             </div>
           </div>
           <div class="tab-pane fade" id="bullet" role="tabpanel" aria-labelledby="profile-tab">
+            @php
+              $list_m = ["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"];
+            @endphp
 
             <ul style="margin-top:20px;">
               @foreach($publications as $row)
+                @if( $row->type === "Conference" )
+                <li>
+                  {{ $row->authors }}. ({{ $row->year }})
+                  {{ $row->title }}. 
+                  ในเอกสารสืบเนื่อง{{ $row->publisher }}. 
+                  <span>{{ $row->date }} {{ $list_m[$row->month-1] }} {{ $row->year }}</span>,
+                  ({{ $row->pages }}).
+                  {{ $row->city }}: {{ $row->place }}
+                </li>
+                @elseif( $row->type === "Journal" )
                 <li>
                   {{ $row->authors }}.
                   "{{ $row->title }}".
@@ -69,6 +82,7 @@
                   {{ $row->year }},
                   หน้า {{ $row->pages }}.
                 </li>
+                @endif
               @endforeach
 
               <script>
@@ -110,14 +124,16 @@
     var jsonData = JSON.parse('@json($publications)');
     var dataSet = [];
     jsonData.forEach(function(element,index){
-      var d = new Date(element.year, element.month-1, 1);
+      var d = new Date(element.year, element.month-1, element.date);
       moment.locale('th');
-      d = moment(d).format('YYYY/MM');
+      d = moment(d).format('YYYY/MM/DD');
       var a = [
         d,
         element.authors,
         "<a href='{{url('/')}}/publication/"+element.id+"/edit'>"+element.title+"</a>",
         element.publisher,
+        element.city,
+        element.place,
         element.pages,
         element.language + " " + element.type,
         "<a href='#' onclick='onDelete("+element.id+")' class='text-danger'><i class='fa fa-trash-alt'></i></a>"
@@ -132,6 +148,8 @@
             { title: "authors" },
             { title: "title" },
             { title: "publisher" },
+            { title: "city" },
+            { title: "place" },
             { title: "pages" },
             { title: "type" },
             { title: "action" },

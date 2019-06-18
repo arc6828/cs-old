@@ -16,14 +16,23 @@
     <div class="col-sm-10">
       <input class="form-control" name="publisher" id="publisher" placeholder="สถานที่ตีพิมพ์">
     </div>
-    <div class="offset-sm-2 col-sm-10 text-primary">
-      ยกตัวอย่าง เช่น วารสารวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยมหาสารคาม. ปีที่ 37 ฉบับที่ 4. กรกฎาคม - สิงหาคม 2561
+    <div class="offset-sm-2 col-sm-10 ">
+      
     </div>
-     
+    <div class="offset-sm-2 col-sm-10 text-primary">
+      ยกตัวอย่าง เช่น
+      <ul>
+        <li>conference  เช่น การประชุมวิชาการระดับชาติ วิทยาศาสตร์และเทคโนโลยีระหว่างสถาบัน  (ASTC2018). ครั้งที่ 6</li>
+        <li>journal  เช่น วารสารวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยมหาสารคาม. ปีที่ 37 ฉบับที่ 4. กรกฎาคม - สิงหาคม 2561</li>
+      </ul>      
+    </div>
   </div>
   <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">month</label>
-    <div class="col-sm-4">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Date</label>
+    <div class="col-sm-2">
+      <input type="number" class="form-control" name="date" id="date" value="1"  >
+    </div>
+    <div class="col-sm-5">
       <select name="month" id="month" class="form-control" required>
         @php
           $list_m = ["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"];
@@ -33,13 +42,10 @@
         @endforeach
       </select>
     </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">year</label>
-    <div class="col-sm-4">
-      <input type="number" class="form-control" name="year" id="year" placeholder="xxxx"  required>
+    <div class="col-sm-3">
+      <input type="number" class="form-control" name="year" id="year" value="2562"  required>
     </div>
-    <div class="col-sm-4 text-primary">
+    <div class="offset-sm-2 col-sm-10 text-primary">
       ยกตัวอย่าง เช่น กรอกเป็น 2019 หรือ 2562 ก็ได้
     </div>
   </div>
