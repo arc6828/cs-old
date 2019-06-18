@@ -67,7 +67,8 @@
               @foreach($publications as $row)
                 @if( $row->type === "Conference" )
                 <li>
-                  {{ $row->authors }}. ({{ $row->year }})
+                  {{ $row->authors }}. 
+                  ({{ $row->year }}).
                   {{ $row->title }}. 
                   ในเอกสารสืบเนื่อง{{ $row->publisher }}. 
                   <span>{{ $row->date }} {{ $list_m[$row->month-1] }} {{ $row->year }}</span>,
@@ -76,11 +77,11 @@
                 </li>
                 @elseif( $row->type === "Journal" )
                 <li>
-                  {{ $row->authors }}.
-                  "{{ $row->title }}".
-                  {{ $row->publisher }},
-                  {{ $row->year }},
-                  หน้า {{ $row->pages }}.
+                  {{ $row->authors }}.     
+                  ({{ $row->year }}).
+                  {{ $row->title }}.
+                  {{ $row->publisher }} : 
+                  {{ $row->pages }}.
                 </li>
                 @endif
               @endforeach
