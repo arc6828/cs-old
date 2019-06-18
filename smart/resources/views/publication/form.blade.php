@@ -16,6 +16,10 @@
     <div class="col-sm-10">
       <input class="form-control" name="publisher" id="publisher" placeholder="สถานที่ตีพิมพ์">
     </div>
+    <div class="offset-sm-2 col-sm-10 text-primary">
+      ยกตัวอย่าง เช่น วารสารวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยมหาสารคาม. ปีที่ 37 ฉบับที่ 4. กรกฎาคม - สิงหาคม 2561
+    </div>
+     
   </div>
   <div class="form-group row">
     <label for="inputPassword" class="col-sm-2 col-form-label">month</label>
@@ -61,6 +65,18 @@
         <option value="National">National</option>
         <option value="International">International</option>
       </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">City</label>
+    <div class="col-sm-10">
+      <input class="form-control" name="city" id="city" placeholder="จังหวัด...">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Place</label>
+    <div class="col-sm-10">
+      <input class="form-control" name="place" id="place" placeholder="สถานที่...">
     </div>
   </div>
 </div>

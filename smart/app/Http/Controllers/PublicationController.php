@@ -55,6 +55,9 @@ class PublicationController extends Controller
         "pages" => $request->input("pages",""),
         "type" => $request->input("type",""),
         "language" => $request->input("language",""),
+        //extension
+        "city" => $request->input("city",""),
+        "place" => $request->input("place",""),
       ];
       PublicationModel::insert($input);
       return redirect('/publication');
@@ -103,6 +106,9 @@ class PublicationController extends Controller
         "pages" => $request->input("pages",""),
         "type" => $request->input("type",""),
         "language" => $request->input("language",""),
+        //extension
+        "city" => $request->input("city",""),
+        "place" => $request->input("place",""),
       ];
       PublicationModel::update_by_id($input,$id);
       return redirect('/publication#title');
