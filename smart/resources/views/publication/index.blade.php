@@ -61,6 +61,9 @@
           <div class="tab-pane fade" id="bullet" role="tabpanel" aria-labelledby="profile-tab">
             @php
               $list_m = ["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"];
+              $list_mL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+              $list_mS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+
             @endphp
 
             <ul style="margin-top:20px;">
@@ -68,17 +71,20 @@
                 @if( $row->type === "Conference" )
                 <li>
                   {{ $row->authors }}. 
-                  ({{ $row->year }}).
+                  ({{ ($row->language === "National") ? ($row->year + 543 ) : $row->year }}).
                   {{ $row->title }}. 
-                  ในเอกสารสืบเนื่อง{{ $row->publisher }}. 
-                  <span>{{ $row->date }} {{ $list_m[$row->month-1] }} {{ $row->year }}</span>,
+                  {{ ($row->language === "National") ? "ในเอกสารสืบเนื่อง" : "In Proceedings of " }}
+                  {{ $row->publisher }}. 
+                  {{ $row->date }} 
+                  {{ ($row->language === "National") ? $list_m[$row->month-1] : $list_mL[$row->month-1]  }} 
+                  {{ ($row->language === "National") ? ($row->year + 543 ) : $row->year }},
                   ({{ $row->pages }}).
                   {{ $row->city }}: {{ $row->place }}
                 </li>
                 @elseif( $row->type === "Journal" )
                 <li>
                   {{ $row->authors }}.     
-                  ({{ $row->year }}).
+                  ({{ ($row->language === "National") ? ($row->year + 543 ) : $row->year }}).
                   {{ $row->title }}.
                   {{ $row->publisher }} : 
                   {{ $row->pages }}.

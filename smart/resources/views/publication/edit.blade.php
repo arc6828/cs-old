@@ -41,6 +41,7 @@
     document.querySelector("#language").value = "{{ $publication->language }}" ;
     document.querySelector("#city").value = "{{ $publication->city }}" ;
     document.querySelector("#place").value = "{{ $publication->place }}" ;
+    onChangeType();
 
 
   });

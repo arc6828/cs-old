@@ -1,18 +1,18 @@
 <div>
   <div class="form-group row">
-    <label for="staticEmail" class="col-sm-2 col-form-label">authors</label>
+    <label for="staticEmail" class="col-sm-2 col-form-label">authors <span class="text-danger">*</span></label>
     <div class="col-sm-10">
       <input class="form-control" name="authors" id="authors" placeholder="ชื่อผู้เขียน" required>
     </div>
   </div>
   <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">title</label>
+    <label for="inputPassword" class="col-sm-2 col-form-label">title<span class="text-danger">*</span></label>
     <div class="col-sm-10">
       <input class="form-control" name="title" id="title" placeholder="ชื่อเรื่อง" required>
     </div>
   </div>
   <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">publisher</label>
+    <label for="inputPassword" class="col-sm-2 col-form-label">publisher<span class="text-danger">*</span></label>
     <div class="col-sm-10">
       <input class="form-control" name="publisher" id="publisher" placeholder="สถานที่ตีพิมพ์">
     </div>
@@ -28,7 +28,7 @@
     </div>
   </div>
   <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Date</label>
+    <label for="inputPassword" class="col-sm-2 col-form-label">Date<span class="text-danger">*</span></label>
     <div class="col-sm-2">
       <input type="number" class="form-control" name="date" id="date" value="1"  >
     </div>
@@ -50,22 +50,13 @@
     </div>
   </div>
   <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">pages</label>
+    <label for="inputPassword" class="col-sm-2 col-form-label">pages<span class="text-danger">*</span></label>
     <div class="col-sm-10">
       <input class="form-control" name="pages" id="pages" placeholder="หน้า">
     </div>
   </div>
   <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Type</label>
-    <div class="col-sm-4">
-      <select name="type" id="type" class="form-control">
-        <option value="Conference">Conference</option>
-        <option value="Journal">Journal</option>
-      </select>
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">language</label>
+    <label for="inputPassword" class="col-sm-2 col-form-label">Region <span class="text-danger">*</span></label>
     <div class="col-sm-4">
       <select name="language" id="language"  class="form-control">
         <option value="National">National</option>
@@ -74,15 +65,41 @@
     </div>
   </div>
   <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">City</label>
-    <div class="col-sm-10">
-      <input class="form-control" name="city" id="city" placeholder="จังหวัด...">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Type<span class="text-danger">*</span></label>
+    <div class="col-sm-4">
+      <select name="type" id="type" class="form-control" onchange="onChangeType();">
+        <option value="Conference">Conference</option>
+        <option value="Journal">Journal</option>
+      </select>
     </div>
   </div>
-  <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Place</label>
-    <div class="col-sm-10">
-      <input class="form-control" name="place" id="place" placeholder="สถานที่...">
+  <div class="conference-only">
+    <div class="form-group row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">City<span class="text-danger">*</span></label>
+      <div class="col-sm-10">
+        <input class="form-control" name="city" id="city" placeholder="จังหวัด...">
+      </div>
     </div>
-  </div>
+    <div class="form-group row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Place<span class="text-danger">*</span></label>
+      <div class="col-sm-10">
+        <input class="form-control" name="place" id="place" placeholder="สถานที่...">
+      </div>
+    </div>
+  </div>  
 </div>
+<script>
+  function hideConferenceOnly(){
+    $(".conference-only").addClass("d-none");
+  }
+  function showConferenceOnly(){
+    $(".conference-only").removeClass("d-none");
+  }
+  function onChangeType(){
+    if($("#type").val() === "Conference"){
+      showConferenceOnly();
+    }else if($("#type").val() === "Journal"){
+      hideConferenceOnly();
+    }
+  }
+</script>
