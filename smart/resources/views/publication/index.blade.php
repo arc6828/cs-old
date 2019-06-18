@@ -61,8 +61,8 @@
             <ul style="margin-top:20px;">
               @foreach($publications as $row)
                 <li>
-                  {{ $row->authors }}.
-                  "{{ $row->title }}".
+                  {{ $row->authors }}. ($row->year)
+                  "{{ $row->title }}". 
                   {{ $row->publisher }},
                   {{ $row->year }},
                   หน้า {{ $row->pages }}.
