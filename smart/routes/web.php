@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/publication/test', function(){
+  return view('publication/test');
+});
 Route::resource('/publication', 'PublicationController');
 
 Auth::routes();
